@@ -6,7 +6,7 @@ package proyectoMexBank;
 
 /**
  *
- * author Roxana Guadalupe Hernández Poceros
+ * @author rox_g  Roxana Guadalupe Hernández Poceros
  */
 // Crear CuentaBase
 public class CuentaBase {

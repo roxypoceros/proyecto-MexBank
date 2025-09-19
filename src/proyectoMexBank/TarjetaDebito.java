@@ -6,7 +6,7 @@ package proyectoMexBank;
 
 /**
  *
- * @author rox_g
+ * @author rox_g  Roxana Guadalupe Hernández Poceros
  */
 // Extender clase TarjetaCredito de CuentaBase
 public class TarjetaDebito extends CuentaBase {

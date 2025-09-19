@@ -6,7 +6,14 @@ package proyectoMexBank;
 
 /**
  *
- * @author rox_g
+ * Universidad Virtual del Estado de Guanajuato
+ * Ingeniería en Desarrollo de Software
+ * Programación orientada a objetos v1
+ * R4. Herencia de clases y paso de parámetros
+ * @author rox_g  Roxana Guadalupe Hernández Poceros
+ * Matrícula: 24013162
+ * Asesor: Claudia Patricia Rojano Hernández
+ * Martes 19 de septiembre del 2025
  */
 public class Main {
     public static void main(String[] args) {
@@ -23,6 +30,11 @@ public class Main {
         System.out.println("Saldo en tarjeta de debito " + tdebito.getMontoActual());
         System.out.println();
         
+        TarjetaAhorro tahorro = new TarjetaAhorro(2000);
+        tahorro.depositar(500);
+        tahorro.invertir();
+        System.out.println("Saldo en tarjeta de ahorro " + tahorro.getMontoActual());
+        System.out.println();
 
     }
     
