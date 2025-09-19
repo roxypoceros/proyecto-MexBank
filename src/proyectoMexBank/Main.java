@@ -39,3 +39,14 @@ public class Main {
     }
     
 }
+
+/**
+ * EJEMPLO DE SALIDA 
+ * 
+ * Saldo en tarjeta de crédito -4600.0
+ *
+ * Saldo en tarjeta de debito 3300.0
+ *
+ * Saldo en tarjeta de ahorro 2750.0
+ *  
+*/
