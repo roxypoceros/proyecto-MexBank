@@ -29,4 +29,9 @@ public class CuentaBase {
         public double setMontoActual(){
         this.montoActual = montoActual;
         }
+        
+     //Método depositar aumenta en 10% el monto actual
+        public void depositar(double cantidad){
+        this.montoActual = this.montoActual + cantidad;
+        }
     }
