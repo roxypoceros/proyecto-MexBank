@@ -15,6 +15,15 @@ public class Main {
         tcredito.depositar(1000);
         tcredito.sumaIntereses();
         System.out.println("Saldo en tarjeta de crédito " + tcredito.getMontoActual());
+        System.out.println();
+        
+        TarjetaDebito tdebito = new TarjetaDebito(3000);
+        tdebito.depositar(500);
+        tdebito.restar(200);
+        System.out.println("Saldo en tarjeta de debito " + tdebito.getMontoActual());
+        System.out.println();
+        
+
     }
     
 }

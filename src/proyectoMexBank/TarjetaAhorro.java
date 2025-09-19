@@ -9,9 +9,9 @@ package proyectoMexBank;
  * @author rox_g
  */
 // Extender clase TarjetaCredito de CuentaBase
-public class CuentaAhorro extends CuentaBase {
+public class TarjetaAhorro extends CuentaBase {
     //Agregar constructor
-    CuentaAhorro(double apertura){
+    TarjetaAhorro(double apertura){
         // Iniciar con apertura como saldo inicial
         super(apertura);
     }
@@ -20,7 +20,7 @@ public class CuentaAhorro extends CuentaBase {
     public void invertir(){
         double saldoActual = getMontoActual();
         double interes10 = saldoActual * 0.10;
-        double nuevoSaldo = saltoActual + interes10;
+        double nuevoSaldo = saldoActual + interes10;
         //Actualizar el saldo con el nuevoSaldo
         setMontoActual(nuevoSaldo);
     }
