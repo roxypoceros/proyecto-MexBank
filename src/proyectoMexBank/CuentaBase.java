@@ -26,7 +26,7 @@ public class CuentaBase {
         return montoActual;
         }
         
-        public double setMontoActual(){
+        public void setMontoActual(double montoActual){
         this.montoActual = montoActual;
         }
         
