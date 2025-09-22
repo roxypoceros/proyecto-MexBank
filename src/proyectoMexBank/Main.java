@@ -47,6 +47,9 @@ public class Main {
 /**
  * EJEMPLO DE SALIDA 
  * 
+ * *** Bienvenido(a)***
+
+ * A continuación presentamos el salto de tus 3 tarjetas
  * Saldo en tarjeta de crédito -4600.0
  *
  * Saldo en tarjeta de debito 3300.0
