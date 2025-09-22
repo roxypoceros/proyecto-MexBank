@@ -17,6 +17,10 @@ package proyectoMexBank;
  */
 public class Main {
     public static void main(String[] args) {
+        System.out.println("*** Bienvenido(a)***");
+        System.out.println();
+        System.out.println("A continuación presentamos el salto de tus 3 tarjetas;");
+        System.out.println();
         // Crear objeto para cada tipo de cuenta
         TarjetaCredito tcredito = new TarjetaCredito(5000);
         tcredito.depositar(1000);
