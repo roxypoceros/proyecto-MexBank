@@ -13,7 +13,7 @@ package proyectoMexBank;
  * @author rox_g  Roxana Guadalupe Hernández Poceros
  * Matrícula: 24013162
  * Asesor: Claudia Patricia Rojano Hernández
- * Martes 19 de septiembre del 2025
+ * Martes 24 de septiembre del 2025
  */
 public class Main {
     public static void main(String[] args) {
@@ -81,3 +81,29 @@ public class Main {
     }
     
 }
+
+/**
+ * EJEMPLO DE SALIDA 
+ * 
+*** Bienvenido(a)***
+
+A continuación presentamos el saldo de tus 3 tarjetas;
+
+Tarjeta de Crédito: 
+Saldo inicial: -5000.0
+Interés aplicado (15%) sobre deuda 750.0
+Cantidad depositada: 1000.0
+Saldo final en tarjeta de crédito 4750.0
+
+Tarjeta de Débito: 
+Saldo inicial: 3000.0
+Cantidad retirada: 200.0
+Cantidad depositada 500.0
+Saldo final en tarjeta de debito 3300.0
+
+Tarjeta de Ahorro: 
+Saldo inicial: 2000.0
+Cantidad depositada: 500.0
+Interés del 10% obtenido: 250.0
+Saldo final en tarjeta de ahorro 2750.0
+ */
