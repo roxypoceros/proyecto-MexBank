@@ -43,12 +43,17 @@ public class Main {
         System.out.println("Tarjeta de Débito: ");
         System.out.println("Saldo inicial: " + tdebito.getApertura());
         
+        double depositoDebito = 500
+        tdebito.depositar(depositoDebito);
+        
         //restar devuelve la cantidad retirada
         double cantidadRetirada = tdebito.restar(200);
+        
         System.out.println("Cantidad retirada: " + cantidadRetirada);
-        tdebito.depositar(500);
-        tdebito.restar(200);
-        System.out.println("Saldo en tarjeta de debito " + tdebito.getMontoActual());
+        
+        System.out.println("Cantidad depositada " + depositoDebito);
+
+        System.out.println("Saldo final en tarjeta de debito " + tdebito.getMontoActual());
         System.out.println();
         
         //*****TarjetaAhorro*****
@@ -66,7 +71,7 @@ public class Main {
         System.out.println("Cantidad depositada: " + deposito);
         System.out.println("Interés del 10% obtenido: " + interesAhorro);
         
-        System.out.println("Saldo en tarjeta de ahorro " + tahorro.getMontoActual());
+        System.out.println("Saldo final en tarjeta de ahorro " + tahorro.getMontoActual());
         System.out.println();
 
     }
