@@ -17,12 +17,15 @@ public class TarjetaAhorro extends CuentaBase {
     }
     
     //Método invertir sumará 10% del montoActual al montoActual
-    public void invertir(){
+    public double invertir(double deposito){
         double saldoActual = getMontoActual();
-        double interes10 = saldoActual * 0.10;
-        double nuevoSaldo = saldoActual + interes10;
+        double saldoConDeposito = getMontoActual() + deposito;
+        double interes10 = saldoConDeposito * 0.10;
+        double nuevoSaldo = saldoConDeposito + interes10;
         //Actualizar el saldo con el nuevoSaldo
         setMontoActual(nuevoSaldo);
+        //devuelve el interés 
+        return interes10;
     }
     
   

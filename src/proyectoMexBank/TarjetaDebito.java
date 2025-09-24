@@ -11,12 +11,13 @@ package proyectoMexBank;
 // Extender clase TarjetaCredito de CuentaBase
 public class TarjetaDebito extends CuentaBase {
     //Agregar constructor
-    TarjetaDebito(double apertura){
+    public TarjetaDebito(double apertura){
         super(apertura);
     }
     //Método retirar para restar cantidad de montoActual
-    public void restar(double cantidad){
+    public double restar(double cantidad){
         setMontoActual(getMontoActual() - cantidad);
+        return cantidad;
     }
     
 }

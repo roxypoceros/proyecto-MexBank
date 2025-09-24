@@ -12,18 +12,22 @@ package proyectoMexBank;
 public class TarjetaCredito extends CuentaBase {
     
     //Agregar constructor
-    TarjetaCredito(double apertura){
+    public TarjetaCredito(double apertura){
         // Con super llama al constructor de CuentaBase
-        // Asigna saldo negativo
+        // Inicia en positivo la apertura
         super(-apertura);
+        // Asigna saldo negativo
+        setMontoActual(-getApertura());
     }
     
     // Método sumaIntereses para sumar un 15% de interés a la deuda actual
-    public void sumaIntereses(){
+    public double sumaIntereses(){
         double deudaActual = getMontoActual();
         double interes = deudaActual * 0.15;
         double nuevaDeuda = deudaActual + interes;
         setMontoActual(nuevaDeuda);
+        //retornar el interés
+        return interes;
     }
     
 }
