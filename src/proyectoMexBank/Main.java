@@ -23,16 +23,20 @@ public class Main {
         System.out.println();
         // Crear objeto para cada tipo de cuenta
                 
+        //*****TarjetaCredito*****
         TarjetaCredito tcredito = new TarjetaCredito(5000);
         
         //Saldo inicial de TarjetaCredito
         System.out.println("Tarjeta de Crédito: ");
-        System.out.println("Saldo inicial: " + tcredito.getApertura() );
+        System.out.println("Saldo inicial: -" + tcredito.getApertura() );
+        
         //Cantidad a depositar
-        tcredito.depositar(1000);
+        double depositoCredito = 1000;
         //Interés del 15%
-        double interes15 = tcredito.sumaIntereses();
-        System.out.println("Interés aplicado (15%) " + interes15);
+        double interesCredito = tcredito.sumaIntereses(depositoCredito);
+        
+        System.out.println("Interés aplicado (15%) sobre deuda " + interesCredito);
+        System.out.println("Cantidad depositada: " + depositoCredito);
         System.out.println("Saldo final en tarjeta de crédito " + tcredito.getMontoActual());
         System.out.println();
         
@@ -43,7 +47,7 @@ public class Main {
         System.out.println("Tarjeta de Débito: ");
         System.out.println("Saldo inicial: " + tdebito.getApertura());
         
-        double depositoDebito = 500
+        double depositoDebito = 500;
         tdebito.depositar(depositoDebito);
         
         //restar devuelve la cantidad retirada
@@ -77,17 +81,3 @@ public class Main {
     }
     
 }
-
-/**
- * EJEMPLO DE SALIDA 
- * 
- * *** Bienvenido(a)***
-
-
-Tarjeta de Ahorro: 
-Saldo inicial: 2000.0
-Cantidad depositada: 500.0
-Interés del 10% obtenido: 250.0
-Saldo en tarjeta de ahorro 2750.0
- *  
-*/
